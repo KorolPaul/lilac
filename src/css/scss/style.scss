@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@import  "const";
+@import  "mixins";
+@import  "placeholders";
+
+/* basic */
+@import  "basic/normalize";
+@import  "basic/fonts";
+@import  "basic/default";
+
+/*Form elements*/
+@import  "form-elements/button";
+@import  "form-elements/input-text";
+@import  "form-elements/form";
+
+
+/*layout*/
+@import  "layout/header";
+@import  "layout/menu";
+@import  "layout/headings";
+@import  "layout/content";
+@import  "layout/footer";
+@import  "layout/popup";
+
+
+/*Other*/
+@import  "other/about";
+@import  "other/steps";
+@import  "other/quote";
+@import  "other/good-card";
+@import  "other/toys";
+@import  "other/promo";
+@import  "other/accordion";
+@import  "other/newsletter";
+
+
+/*Plugins*/
+//@import  "plugins/slick";

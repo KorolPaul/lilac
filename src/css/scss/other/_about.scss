@@ -1,0 +1,36 @@
+.about {
+    margin: 0 0 20px;
+    @include tablet {
+        margin: 0 auto 20px;
+        max-width: 560px;
+    }
+    @include desktop {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1042px;
+    }
+
+    &_text {
+        text-align: center;
+        @include desktop {
+            text-align: left;
+            flex-grow: 1;
+            width: 48%;
+            margin: 64px 32px 40px 0;
+        }
+    }
+
+    &_image {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+        margin: 40px auto 0;
+        @include desktop {
+            flex-grow: 1;
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}

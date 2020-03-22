@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: $max-width;
+    padding: 16px $layout_indent;
+    @include tablet {
+        padding: $layout_indent__big $layout_indent;
+    }
+
+    &_logo {
+    }
+    &_logo-image {
+        width: 86px;
+        height: 40px;
+        @include desktop {
+            width: 137px;
+            height: 64px;
+        }
+    }
+    &_menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        @include tablet {
+            justify-content: space-between;
+        }
+    }
+    &_social {
+        @include tablet {
+            width: 86px;
+            display: block;
+            text-align: right;
+        }
+        @include desktop {
+            width: 137px;
+        }
+    }
+}

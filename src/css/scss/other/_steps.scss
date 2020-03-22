@@ -1,0 +1,76 @@
+.steps-wrapper {
+    @include desktop {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &_title {
+        text-align: center;
+        @include desktop {
+            text-align: left;
+            width: 20%;
+            margin-right: 60px;
+        }
+    }
+}
+
+.steps {
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 40px;
+        padding: 0 56px;
+    }
+    @include desktop {
+        column-gap: 80px;
+        row-gap: 64px;
+        width: 75%;
+        padding: 0;
+    }
+}
+
+.step {
+    text-align: center;
+    margin: 0 0 48px;
+    font-size: 14px;
+    line-height: 20px;
+    @include tablet {
+        text-align: left;
+        margin: 0;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+
+    &_image {
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        margin: 0 0 16px;
+        @include tablet {
+            height: 72px;
+            width: 72px;
+            margin-bottom: 24px;
+        }
+    }
+    &_title {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        margin: 0 0 12px;
+        @include tablet {
+            text-align: left;
+            font-size: 24px;
+            line-height: 140%;
+        }
+    }
+
+    p:not([class]) {
+        margin: 0;
+    }
+}

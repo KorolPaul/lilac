@@ -1,0 +1,34 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background: $cBackground;
+    margin: 0;
+    font: #{$font-size}/1.4 $font-family;
+    padding: 0;
+}
+
+a {
+    color: $cLink;
+    transition: .2s ease-in-out color;
+    text-decoration: none;
+
+    &:hover {
+        color: $cLink__hover;
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+.popup-opened {
+    overflow: hidden;
+}

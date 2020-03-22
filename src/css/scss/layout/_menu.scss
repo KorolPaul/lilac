@@ -1,0 +1,19 @@
+.menu {
+    flex-grow: 1;
+    text-align: right;
+    @include tablet {
+        text-align: center;
+    }
+
+    &_link {
+        margin: 0 20px;
+        display: none;
+        @include tablet {
+            display: inline;
+        }
+
+        &__mobile {
+            display: inline;
+        }
+    }
+}

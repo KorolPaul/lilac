@@ -1,0 +1,94 @@
+.accordion-wrapper {
+    @include desktop {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &_title {
+        text-align: center;
+        @include desktop {
+            text-align: left;
+            width: 20%;
+            margin-right: 60px;
+            margin-top: 0;
+        }
+    }
+}
+
+.accordion {
+    &_item {
+        box-shadow: inset 0px -1px 0px #E1DFE6;
+    }
+    &_title {
+        cursor: pointer;
+        display: block;
+        font-size: 18px;
+        line-height: 28px;
+        color: $cLink;
+        padding: 16px 28px 16px 0;
+        position: relative;
+        transition: .2s ease-in-out color;
+        @include tablet {
+            padding-right: 38px;
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        &::after {
+            content: '+';
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: $cLink;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: .2s ease-in-out transform, .2s ease-in-out background;
+        }
+
+        .accordion_radio:checked ~ & {
+            font-weight: 600;
+            color: $color;
+
+            &::after {
+                background-color: $cLink__hover;
+                transform: translateY(-50%) rotate(45deg);
+            }
+        }
+    }
+    &_content {
+        font-size: 14px;
+        line-height: 20px;
+        display: none;
+        padding: 8px 0;
+        @include tablet {
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        .accordion_radio:checked ~ & {
+            display: block;
+        }
+    }
+    &_radio {
+        position: absolute;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    a {
+        color: $cLinkSecondary;
+
+        &:hover {
+            color: $cLinkSecondary__hover;
+        }
+    }
+}

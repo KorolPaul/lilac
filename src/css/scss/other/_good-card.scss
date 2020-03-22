@@ -1,0 +1,50 @@
+.good-card {
+    display: block;
+    position: relative;
+    margin: 0 0 8px;
+    grid-row: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    @include tablet {
+        margin-bottom: 20px;
+        grid-column-end: 4;
+    }
+    @include desktop {
+         grid-column-end: 3;
+    }
+
+    &_image {
+        width: 100%;
+    }
+    &_info {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        color: #fff;
+        @include tablet {
+            left: 20px;
+            bottom: 20px;
+        }
+    }
+    &_category {
+        font-size: 14px;
+        line-height: 20px;
+        display: block;
+        @include tablet {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    &_title {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        @include tablet {
+            font-size: 24px;
+            line-height: 140%;
+        }
+    }
+}

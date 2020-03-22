@@ -1,0 +1,110 @@
+.content {
+
+    &_title {
+        text-align: center;
+    }
+    &_decorated-corner {
+        background: url(/src/img/section-corner.png) no-repeat;
+        width: 88px;
+        height: 120px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+    }
+    &_decorated-right {
+        background: url(/src/img/section-right.png) no-repeat right bottom / 93px 120px;
+        width: 310px;
+        height: 401px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 0;
+        @include tablet {
+            background-size: 170px 220px ;
+        }
+        @include desktop {
+            background-size: 310px 401px ;
+        }
+    }
+    &_section {
+        position: relative;
+
+        &__beige {
+            background: $cBeige;
+
+            &::before {
+                content: '';
+                background: url(/src/img/beige-top.svg) no-repeat center center;
+                top: -20px;
+                left: 0;
+                position: absolute;
+                height: 20px;
+                width: 100%;
+                z-index: -1;
+            }
+            &::after {
+                content: '';
+                background: url(/src/img/beige-bottom.svg) no-repeat center center;
+                bottom: -20px;
+                left: 0;
+                position: absolute;
+                height: 20px;
+                width: 100%;
+                z-index: -1;
+            }
+        }
+        &__blue {
+            background: $cLink;
+            color: #fff;
+
+            &::before {
+                content: '';
+                background: url(/src/img/blue-top.svg) no-repeat;
+                top: -20px;
+                left: 0;
+                position: absolute;
+                height: 20px;
+                width: 100%;
+            }
+            &::after {
+                content: '';
+                background: url(/src/img/blue-bottom.svg) no-repeat;
+                bottom: -20px;
+                left: 0;
+                position: absolute;
+                height: 20px;
+                width: 100%;
+            }
+        }
+        &__indent {
+            margin-top: 90px;
+            @include desktop {
+                margin-top: 120px;
+            }
+        }
+    }
+    &_holder {
+        margin: auto;
+        max-width: $max-width;
+        padding: 60px $layout_indent;
+        position: relative;
+        @include tablet {
+            padding: 80px $layout_indent;
+        }
+        @include desktop {
+            padding: 100px $layout_indent;
+        }
+
+        &__no-indent {
+            @include desktop {
+                padding-top: 0;
+            }
+        }
+
+        .content_section__beige & {
+            padding-top: 20px;
+        }
+    }
+}

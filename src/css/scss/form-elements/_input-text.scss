@@ -1,0 +1,49 @@
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="tel"] {
+    @include placeholder-color(#70697A);
+    color: #70697A;
+    background: #FFFFFF;
+    font-size: 16px;
+    line-height: 26px;
+    border: 1px solid #121426;
+    box-sizing: border-box;
+    border-radius: 1px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 14px;
+    min-width: 100px;
+    transition: .2s ease-in border-color, .2s ease-in color;
+    @include tablet {
+        min-width: 284px;
+        height: 64px;
+        line-height: 64px;
+        padding: 0 20px;
+    }
+    @include desktop {
+        min-width: 448px;
+    }
+
+    &:hover {
+        border-color: #946AD7;
+    }
+    &:focus {
+        border-color: $cLink__hover;
+        color: #121426;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    border: none;
+    border-bottom: 1px solid rgba($color, .12);
+    -webkit-text-fill-color:  #4e565c;
+    transition: background-color 5000s ease-in-out 0s;
+}

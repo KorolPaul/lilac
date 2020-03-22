@@ -1,0 +1,45 @@
+.newsletter {
+    @include tablet {
+        max-width: 740px;
+    }
+    @include desktop {
+        max-width: 875px;
+    }
+
+    &_info {
+        color: #fff;
+    }
+    &_title {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        margin: 0 0 32px;
+        @include tablet {
+            font-size: 24px;
+            line-height: 140%;
+            margin: 0 0 24px;
+        }
+    }
+    &_bright-text {
+        color: $cLinkSecondary__hover;
+    }
+    &_benefits {
+        margin: 0 0 40px;
+        @include tablet {
+            margin-bottom: 64px;
+        }
+    }
+    &_benefit {
+        background: url(/src/img/benefit.png) no-repeat 0 center;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 0 0 30px;
+        margin: 0 0 16px;
+        @include tablet {
+            display: inline-block;
+            margin: 0 40px 0 0;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@mixin button {
+    background: $color;
+    border: none;
+    border-radius: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: 48px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    padding: 0 28px;
+    text-align: center;
+    width: 100%;
+    transition: .2s ease-in-out background-color;
+    @include tablet {
+        width: auto;
+        height: 64px;
+        line-height: 64px;
+    }
+
+    &:hover {
+        color: #fff;
+        background: $cLink__hover;
+    }
+    &:active,
+    &:focus {
+        filter: saturate(2);
+    }
+}
+
+.button,
+button,
+input[type="button"],
+input[type="submit"] {
+    @include button;
+}
+
+.button {
+    &__small {
+        width: auto;
+    }
+}

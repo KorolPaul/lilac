@@ -1,0 +1,18 @@
+.form {
+
+    &_row {
+        @include tablet {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+    &_input {
+        width: 100%;
+        margin: 0 0 16px;
+        @include tablet {
+            width: auto;
+            margin: 0;
+        }
+    }
+}
