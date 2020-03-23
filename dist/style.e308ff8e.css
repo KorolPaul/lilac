@@ -640,7 +640,7 @@ h2 {
   text-align: center;
 }
 .content_decorated-corner {
-  background: url(/bf2e46be212a4fce41de78039ae256bf.png) no-repeat;
+  background: url(bf2e46be212a4fce41de78039ae256bf.png) no-repeat;
   width: 88px;
   height: 120px;
   position: absolute;
@@ -649,7 +649,7 @@ h2 {
   pointer-events: none;
 }
 .content_decorated-right {
-  background: url(/94f2dcf230f550112e7b4563b76a57d9.png) no-repeat right bottom/93px 120px;
+  background: url(94f2dcf230f550112e7b4563b76a57d9.png) no-repeat right bottom/93px 120px;
   width: 310px;
   height: 401px;
   position: absolute;
@@ -676,7 +676,7 @@ h2 {
 }
 .content_section__beige::before {
   content: "";
-  background: url(/d699f796d660615e863398123e3ece2f.svg) no-repeat center center;
+  background: url(d699f796d660615e863398123e3ece2f.svg) no-repeat center center;
   top: -20px;
   left: 0;
   position: absolute;
@@ -686,7 +686,7 @@ h2 {
 }
 .content_section__beige::after {
   content: "";
-  background: url(/ffdf268a3eabbf959fd1bf7c2f2cf72b.svg) no-repeat center center;
+  background: url(ffdf268a3eabbf959fd1bf7c2f2cf72b.svg) no-repeat center center;
   bottom: -20px;
   left: 0;
   position: absolute;
@@ -700,7 +700,7 @@ h2 {
 }
 .content_section__blue::before {
   content: "";
-  background: url(/b67c8c3d031bbf7ca64b23cd5ed08187.svg) no-repeat;
+  background: url(b67c8c3d031bbf7ca64b23cd5ed08187.svg) no-repeat;
   top: -20px;
   left: 0;
   position: absolute;
@@ -709,7 +709,7 @@ h2 {
 }
 .content_section__blue::after {
   content: "";
-  background: url(/b8095f26394640bf0259d3876c7d1aac.svg) no-repeat;
+  background: url(b8095f26394640bf0259d3876c7d1aac.svg) no-repeat;
   bottom: -20px;
   left: 0;
   position: absolute;
@@ -762,7 +762,7 @@ h2 {
 }
 .footer::before {
   content: "";
-  background: url(/38d32b25622aeb5b1370fd7a3483bd15.png) no-repeat left bottom;
+  background: url(38d32b25622aeb5b1370fd7a3483bd15.png) no-repeat left bottom;
   width: 110px;
   height: 150px;
   position: absolute;
@@ -1369,7 +1369,7 @@ h2 {
   }
 }
 .newsletter_benefit {
-  background: url(/2ec252340003fd2977c0433231e8ed84.png) no-repeat 0 center;
+  background: url(2ec252340003fd2977c0433231e8ed84.png) no-repeat 0 center;
   display: block;
   font-size: 14px;
   line-height: 20px;
