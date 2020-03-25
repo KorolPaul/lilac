@@ -33,6 +33,13 @@ input[type="tel"] {
     &:focus {
         border-color: $cLink__hover;
         color: #121426;
+        outline: none;
+    }
+    &:invalid {
+        border-color: $cLink__hover;
+        background-image: url(/src/img/warning.svg);
+        background-repeat: no-repeat;
+        background-position: 92% center;
     }
 }
 

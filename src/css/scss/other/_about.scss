@@ -20,6 +20,10 @@
             width: 48%;
             margin: 64px 32px 40px 0;
         }
+
+        p:not([class]) {
+            margin: 0 0 40px;
+        }
     }
 
     &_image {

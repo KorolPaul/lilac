@@ -8,6 +8,9 @@
     @include tablet {
         padding: $layout_indent__big $layout_indent;
     }
+    @include desktop {
+        padding-top: 60px;
+    }
 
     &_logo {
     }
@@ -29,6 +32,8 @@
         }
     }
     &_social {
+        transition: .2s ease-in-out filter;
+
         @include tablet {
             width: 86px;
             display: block;
@@ -36,6 +41,10 @@
         }
         @include desktop {
             width: 137px;
+        }
+
+        &:hover {
+            filter: saturate(1.2) contrast(2);
         }
     }
 }

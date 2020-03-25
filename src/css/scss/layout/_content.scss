@@ -4,7 +4,7 @@
         text-align: center;
     }
     &_decorated-corner {
-        background: url(/src/img/section-corner.png) no-repeat;
+        background: url(/src/img/section-corner.svg) no-repeat;
         width: 88px;
         height: 120px;
         position: absolute;
@@ -13,7 +13,7 @@
         pointer-events: none;
     }
     &_decorated-right {
-        background: url(/src/img/section-right.png) no-repeat right bottom / 93px 120px;
+        background: url(/src/img/section-right.svg) no-repeat right bottom / 93px 120px;
         width: 310px;
         height: 401px;
         position: absolute;
@@ -103,7 +103,7 @@
             }
         }
 
-        .content_section__beige & {
+        .content_section__indent & {
             padding-top: 20px;
         }
     }
