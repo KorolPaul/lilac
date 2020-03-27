@@ -16,7 +16,7 @@ input[type="tel"] {
     line-height: 48px;
     padding: 0 14px;
     min-width: 100px;
-    transition: .2s ease-in border-color, .2s ease-in color;
+    transition: .2s ease-in border-color, .2s ease-in color, .2s ease-in box-shadow;
     @include tablet {
         min-width: 284px;
         height: 64px;
@@ -34,6 +34,7 @@ input[type="tel"] {
         border-color: $cLink__hover;
         color: #121426;
         outline: none;
+        box-shadow: 0 0 0 1px $cLink__hover inset;
     }
     &:invalid {
         border-color: $cLink__hover;
