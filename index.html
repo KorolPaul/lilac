@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta content="telephone=no" name="format-detection">
     <meta name="HandheldFriendly" content="true">
-    <link rel="stylesheet" href="/src/css/scss/style.scss">
+    <link rel="stylesheet" href="src/css/scss/style.scss">
 </head>
 <body>
     <header class="header">
@@ -117,7 +117,14 @@
                         <p class="toy_category">Moonpicnic</p>
                         <p class="toy_title">My Weather Station</p>
                     </a>
-                    <a href="#" class="toys_other">98 more awesome toys&nbsp;→</a>
+                    <a href="#" class="toys_other">
+                        <div>
+                            98 more awesome toys
+                            <svg class="toys_other-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.976 7.664L10.28 13.352H6.416L8.84 9.2H2V6.128H8.84L6.416 2H10.28L13.976 7.664Z" fill="#343B6F"/>
+                            </svg>
+                        </div>
+                    </a>
                 </div>
                 <div class="promo">
                     <img src="src/img/about-small.svg" alt="" class="promo_image">
@@ -216,14 +223,6 @@
                                 <p>Yes, absolutely! Send a link to <a href="maito:support@lilacbird.com">support@lilacbird.com</a> with a toy you’d like to have and we send you back an invoice. As soon as it is paid toy is yours.</p>
                             </div>
                         </div>
-                        <script>
-                            const radioElements = document.querySelectorAll('.accordion_radio');
-                            for (let i = 0; i < radioElements.length; i++) {
-                                radioElements[i].addEventListener('change', (e) => {
-                                    console.log(e.target.checked)
-                                });
-                            }
-                        </script>
                     </div>
                 </div>
             </div>

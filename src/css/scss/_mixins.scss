@@ -42,6 +42,14 @@
         margin-left: auto;
         margin-right: auto;
     }
+    @include desktop {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1050px;
+    }
+    @include media(1440px) {
+        max-width: 1280px;
+    }
 
 }
 

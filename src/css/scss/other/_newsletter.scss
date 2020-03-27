@@ -4,6 +4,7 @@
     }
     @include desktop {
         max-width: 875px;
+        margin-left: 40px;
     }
 
     &_info {

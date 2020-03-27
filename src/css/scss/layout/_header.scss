@@ -6,10 +6,12 @@
     max-width: $max-width;
     padding: 16px $layout_indent;
     @include tablet {
-        padding: $layout_indent__big $layout_indent;
+        padding: $layout_indent__big 40px;
     }
     @include desktop {
         padding-top: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     &_logo {

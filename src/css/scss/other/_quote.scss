@@ -1,6 +1,11 @@
 .quote {
     margin: 0 0 80px;
     max-width: 900px;
+    @include desktop {
+        margin-top: 40px;
+        margin-bottom: 120px;
+        margin-left: 40px;
+    }
 
     &_header {
         display: flex;

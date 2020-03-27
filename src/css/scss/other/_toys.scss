@@ -28,6 +28,17 @@
             line-height: 140%;
             padding: 16%;
         }
+
+        path {
+            fill: #343B6F;
+            transition: .2s ease-in-out fill;
+        }
+        &:hover path {
+            fill: $cLink__hover !important;
+        }
+    }
+    &_other-arrow {
+        vertical-align: middle;
     }
 }
 
@@ -36,8 +47,13 @@
     border-radius: 3px;
     padding: 16px 8px;
     margin: 0 0 8px;
+    transition: .2s ease-in-out background;
     @include tablet {
         margin-bottom: 20px;
+    }
+
+    &:hover {
+        background: #D5D9F5;
     }
 
     &_image {
@@ -65,6 +81,7 @@
         font-size: 14px;
         line-height: 20px;
         color: #343B6F;
+        margin: 0;
         @include tablet {
             font-size: 16px;
             line-height: 26px;

@@ -8,17 +8,17 @@
         text-align: left;
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        max-width: 1042px;
+        align-items: center;
+        max-width: 100%;
     }
 
     &_text {
         text-align: center;
         @include desktop {
             text-align: left;
-            flex-grow: 1;
+            flex-grow: 2;
             width: 48%;
-            margin: 64px 32px 40px 0;
+            margin: 64px 60px 40px 40px;
         }
 
         p:not([class]) {
@@ -31,10 +31,15 @@
         margin: auto;
         display: block;
         margin: 40px auto 0;
+        @include tablet {
+            flex-shrink: 0;
+        }
         @include desktop {
             flex-grow: 1;
-            width: 50%;
+            min-width: 526px;
+            max-width: 630px;
             margin: 0 auto;
+            width: 50%;
         }
     }
 }
